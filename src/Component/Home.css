@@ -1,0 +1,104 @@
+.slick-dots{
+   position: unset;
+   
+}
+.slick-arrow{
+   display: none !important;
+}
+.item-slider {
+    position: relative;
+  }
+  
+  .title-serves {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  
+  .title-serves h5 {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .title-serves h5::after {
+    content: "";
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền chữ nhìn overlay */
+    z-index: -1;
+  }
+  
+.slick-slider-item{
+    margin-top: 50px;
+  padding-left: 15% !important;
+ 
+  padding-right: 15% !important;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.title h1{
+  font-size: 30px;
+  font-weight: 600;
+}
+.title h1 span{
+  color: #a6a6a6;
+}
+.item-tour{
+  margin-bottom: 24px;
+}
+.item-time{
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.item-time h5{
+  font-size: 15px;
+  margin-bottom: 0;
+}
+.item-time img{
+  margin-right: 10px;
+}
+.main-item{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.name-tour , .price-tour , .times{
+  padding: 5px 10px;
+}
+.price-tour h4{
+  color: #1BA0EA !important;
+  font-weight: 600;
+}
+.item-tour a{
+  color: #000;
+}
+.item-tour a:hover{
+  color: #000;
+}
+
+@media(max-width : 800px){
+    .slick-slider-item{
+        padding-left:12px !important;
+  padding-right:12px !important;
+    }
+    .carousel-item img{
+        height: 300px !important;
+      }
+      .slick-slider-item{
+        margin-top: 20px;
+      }
+}

@@ -1,0 +1,30 @@
+@media(max-width : 800px){
+    .carousel-item img{
+        height: 300px !important;
+      }
+}
+.main-offer{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.content-offer h4{
+    font-size: 19px;
+    color: #6A737B;
+}
+.content-offer ul li , .content-offer p{
+    font-size: 14px;
+    color: #444444;
+}
+.btn-book a{
+    color: #fff;
+    background-color: #a99789;
+    font-size: 14px;
+    padding: 7px 15px;
+}
+.btn-book a:hover{
+    color: #a99789;
+    background-color: #fff;
+    border:  1px solid #a99789;
+}

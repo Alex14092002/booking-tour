@@ -1,0 +1,98 @@
+.swiper-wrapper{
+    padding-top: 10px;
+}
+.main-detail{
+    padding: 30px 0px !important;
+}
+.item-detail ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.item-detail ul li{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+.item-detail ul li img{
+    margin-right: 10px;
+}
+.btn-option{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.btn-dattour a{
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 40px;
+    border-radius: 8px;
+    background-color: #1ba0e2;
+}
+.btn-dattour a:hover{
+    color: #fff;
+}
+.btn-lienhe button{
+    border: none;
+    font-size: 16px;
+    background-color: #ff891e;
+    padding: 10px 30px !important;
+}
+.dontour{
+    padding: 30px 0px;
+}
+.dontour table {
+    width: 100%;
+}
+.dontour table tr th{
+    padding: 10px 0px;
+    border-bottom: #ddd 2px solid;
+}
+.dontour table tr td{
+    padding: 10px 0;
+}
+.quantity-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  #quantity {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    color: #000;
+    border: #ddd 1px solid;
+  }
+  .quantity-input input{
+    height: 30px;
+  }
+  
+  .quantity-input button {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  #decrease-btn{
+    margin-right: 6px;
+  }
+  .quantity-input button:hover {
+    background-color: #fff;
+    color: #000;
+    border: #000 1px solid;
+  }
+
+.tongtien{
+    font-weight: 600;
+}
+.tong{
+    font-weight: 600;
+    color: #ff0000;
+    font-size: 20px;
+}
+  
