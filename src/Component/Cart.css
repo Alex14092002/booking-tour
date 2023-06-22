@@ -1,0 +1,53 @@
+.main-cart{
+    padding: 20px;
+}
+.head h5{
+    color: #a99789;
+    font-weight: 600;
+}
+.cart-main{
+    padding: 10px 0px;
+}
+.item-cart{
+    margin-bottom: 10px;
+}
+.detail-cart h4 , .detail-cart h3{
+    font-size: 15px;
+    font-weight: 600;
+}
+.detail-cart h5{
+    font-size: 15px;
+    color: #a99789;
+    margin-top: 10px;
+}
+.detail-cart button{
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.btn-dat button{
+    width: 100%;
+}
+.btn-dat a{
+    width: 100%;
+}
+.btn-dat button{
+    margin: 10px 0;
+}
+.btn-dat a{
+    width: 100%;
+    background-color: cornflowerblue;;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 10px 0px;
+    border-radius: 10px;
+    justify-content: center;
+}
+.btn-dat a:hover{
+    color: #fff;
+}
+.item-cart table{
+    width: 100%;
+}

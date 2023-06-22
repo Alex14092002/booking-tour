@@ -40,6 +40,17 @@
     background-color: #ff891e;
     padding: 10px 30px !important;
 }
+.btn-lienhe a{
+    border: none;
+    font-size: 16px;
+    background-color: #ff891e;
+    padding: 10px 30px !important;
+    color: #fff;
+    border-radius: 10px;
+}
+.btn-lienhe a:hover{
+    color: #fff;
+}
 .dontour{
     padding: 30px 0px;
 }
@@ -95,4 +106,40 @@
     color: #ff0000;
     font-size: 20px;
 }
-  
+.select input{
+    color: #000;
+    margin-left: 10px;
+    padding : 10px;
+    border: none;
+    border: #ddd 2px solid;
+    border-radius: 10px;
+}
+.select-booking{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+.btn-booking a{
+     border: none;
+    font-size: 16px;
+    background-color :#1ba0e2;
+    padding: 10px 30px !important;
+    color: #fff;
+    border-radius: 10px;
+}
+.btn-booking a:hover{
+    color: #fff;
+}
+.item-form{
+    padding: 10px 0px;
+}
+.item-form label{
+    margin-right: 10px;
+}
+.item-form input{
+    height: 35px;
+    border: #1ba0e2 1px solid;
+    color: #000;
+    padding-left: 10px;
+    width: 100%;
+}

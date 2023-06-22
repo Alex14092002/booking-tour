@@ -97,7 +97,7 @@ const Home = () => {
              <div className="tour row">
                  {Object.keys(ngoainuoc).map((value) => (   
                    <div className="item-tour col-12 col-md-4">
-                    <Link >
+                    <Link to={`/detail2/${value}`} >
                     <div className="main-item">
                      <div className="img-tour">
                        <img src={ngoainuoc[value].img1} alt="" width="100%" />

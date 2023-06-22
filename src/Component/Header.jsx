@@ -31,13 +31,13 @@ const Header = () => {
                 <NavLink  activeClassName="active"   to="/">TRANG CHỦ</NavLink>
               </li>
               <li>
-                <NavLink to="/uudai"> GIỚI THIỆU</NavLink>
+                <NavLink to="/gioithieu"> GIỚI THIỆU</NavLink>
               </li>
               <li>
-                <NavLink to="/room1">TOUR TRONG NƯỚC</NavLink>
+                <NavLink to="/tourtrongnuoc">TOUR TRONG NƯỚC</NavLink>
               </li>
               <li>
-                <NavLink to="/room2">TOUR NƯỚC NGOÀI</NavLink>
+                <NavLink to="/tournuocngoai">TOUR NƯỚC NGOÀI</NavLink>
               </li>
               
               <li>
@@ -63,19 +63,13 @@ const Header = () => {
                 <Link to="/">TRANG CHỦ</Link>{" "}
               </li>
               <li>
-                <Link to="/uudai"> CÁC ƯU ĐÃI</Link>
+                <Link to="/gioithieu"> GIỚI THIỆU</Link>
               </li>
               <li>
-                <Link to="/room1">PHÒNG NGỦ 1 NGƯỜI</Link>{" "}
+                <Link to="/tourtrongnuoc">TOUR TRONG NƯỚC</Link>{" "}
               </li>
               <li>
-                <Link to="/room2">PHÒNG NGỦ 2 NGƯỜI</Link>
-              </li>
-              <li>
-                <Link to='/homestay'>HOME STAY</Link>
-              </li>
-              <li>
-                <Link to="/tienich">TIỆN ÍCH</Link>
+                <Link to="/tournuocngoai">TOUR NƯỚC NGOÀI</Link>
               </li>
               <li>
                 <Link to="/lienhe">LIÊN HỆ VỚI CHÚNG TÔI</Link>

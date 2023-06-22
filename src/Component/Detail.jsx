@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Navigation, Thumbs } from "swiper";
-
+import { Link } from "react-router-dom";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -12,12 +12,15 @@ import "../Component/Detail.css";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 
+
+
+
 const Detail = () => {
+   
+
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const { id } = useParams();
-
   const [data, setData] = useState([]);
-
   const [adultQuantity, setAdultQuantity] = useState(1);
   const [childQuantity, setChildQuantity] = useState(0);
   const [babyQuantity, setBabyQuantity] = useState(0);
@@ -26,12 +29,14 @@ const Detail = () => {
   const [babyPrice, setBabyPrice] = useState(0);
   const [totalPrice, setTotalPrice] = useState(adultPrice);
   const [loading, setLoading] = useState(true);
-  useEffect(async () => {
-    const res = await fetch(
-      `https://data-booking-tour-default-rtdb.firebaseio.com/tourtrongnuoc/${id}.json`
-    );
-    const db = await res.json();
-    setData(db);
+  useEffect(() => {
+    (async ()=>{
+        const res = await fetch(
+            `https://data-booking-tour-default-rtdb.firebaseio.com/tourtrongnuoc/${id}.json`
+          );
+          const db = await res.json();
+          setData(db);
+    })()
   }, []);
 
   useEffect(() => {
@@ -85,10 +90,35 @@ const Detail = () => {
       </>
     );
   };
+
+  const handleAddToCart = () => {
+    const tourData = {
+      tourName: data.name,
+      img1: data.img1,
+      departureDate: document.getElementById("departure-date").value,
+      totalPrice,
+    };
+
+    // Get the existing cart items from local storage
+    const existingCartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+    // Add the tour data to the cart items
+    existingCartItems.push(tourData);
+
+    // Save the updated cart items back to local storage
+    localStorage.setItem("cartItems", JSON.stringify(existingCartItems));
+      // Show a success message or perform any additional actions
+      
+    };
+  
   const showContent = () => {
     return (
+        
       <>
+      
         {
+           
+            
             <div className="container">
             <div className="main-detail row">
               <div className="col-12 col-md-6">
@@ -205,16 +235,18 @@ const Detail = () => {
   
                 <div className="btn-option">
                   <div className="btn-dattour">
-                    <a href="#">ĐẶT TOUR</a>
+                    <a href="#booking">ĐẶT TOUR</a>
                   </div>
                   <div className="btn-lienhe">
-                    <button>GỌI LẠI CHO TÔI SAU</button>
+                    <Link to='/lienhe'>GỌI LẠI CHO TÔI SAU</Link>
                   </div>
                 </div>
+
+               
               </div>
             </div>
   
-            <div className="dontour">
+            <div className="dontour" id="booking">
               <table>
                 <thead>
                   <tr>
@@ -336,14 +368,28 @@ const Detail = () => {
                   </tr>
                 </tbody>
               </table>
+              <div className="select-booking">
+                <div className="select">
+                  <label htmlFor="">Chọn Ngày</label>
+                  <input type="date" name="" id="departure-date" />
+                </div>
+                <div className="btn-booking">
+                  <Link to='/cart' onClick={handleAddToCart} >THÊM TOUR VÀO GIỎ HÀNG</Link>
+                </div>
+              </div>
             </div>
           </div>
+          
         }
+      
       </>
     );
   };
 
-  return <>{loading ? Loading() : showContent()}</>;
+  return <>
+  {loading ? Loading() : showContent()}
+
+  </>;
 };
 
 export default Detail;

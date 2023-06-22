@@ -28,3 +28,21 @@
     background-color: #fff;
     border:  1px solid #a99789;
 }
+.form-lienhe div{
+    margin-bottom: 12px;
+}
+.form-lienhe div input{
+    width: 100%;
+    color: #000;
+    padding-left: 10px;
+    border: #ddd 1px solid ;
+    height: 30px;
+    border-radius: 10px;
+}
+#ghichu{
+    height: 60px;
+}
+.btn-lienhe{
+    display: flex;
+    justify-content: center;
+}
